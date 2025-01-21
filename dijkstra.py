@@ -282,7 +282,7 @@ def find_in_direction(image, current_pixel, origin, directions, desired_angle=No
 
 
 if len(sys.argv)!=3:
-    subprocess.run(["dijkstra.exe", "detected_graph.txt"])
+    subprocess.run(["dijkstra.exe", "detected_graph.txt", sys.argv[1]]])
 else:
     print('generating detected_graph.txt from image: ', sys.argv[1], '... please wait...\n')
     detect_graph(sys.argv[1])
